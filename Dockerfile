@@ -12,8 +12,6 @@ RUN apt-get update \
      && apt-get install -y iputils-ping \
      && apt-get install -y ca-certificates vim curl && update-ca-certificates
 
-WORKDIR /opt/frp
-
 ADD files/frp_0.57.0_linux_amd64.tar.gz /opt/
 
 RUN mv /opt/frp_0.57.0_linux_amd64 /opt/frp

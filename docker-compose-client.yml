@@ -9,7 +9,8 @@ services:
       - TZ=Asia/Shanghai
     volumes:
       - "./client.toml:/opt/frp/client.toml"
+    working_dir: "/opt/frp"
     command:
-      - "/opt/frp/frpc"
+      - "./frpc"
       - "-c"
       - "client.toml"
