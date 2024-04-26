@@ -2,12 +2,12 @@
 
 ## frp server
 
-[client.toml](client.toml)
+[server.toml](server/server.toml)
 
-[docker-compose.yml](docker-compose-client.yml)
+[docker-compose.yml](server/docker-compose.yml)
 
 ## frp client
 
-[server.toml](server.toml)
+[client.toml](client/client.toml)
 
-[docker-compose.yml](docker-compose-client.yml)
+[docker-compose.yml](client/docker-compose.yml)
