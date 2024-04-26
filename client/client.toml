@@ -1,6 +1,10 @@
 serverAddr = "127.0.0.1"
 serverPort = 7000
 
+log.to = "./log/frpc.log"
+log.level = "info"
+log.maxDays = 3
+
 auth.token = "abc"
 
 [[proxies]]

@@ -8,10 +8,11 @@ services:
     environment:
       - TZ=Asia/Shanghai
     volumes:
-      - "./client.toml:/opt/frp/client.toml"
+      - "./server.toml:/opt/frp/server.toml"
+      - "./log:/opt/frp/log"
     working_dir: "/opt/frp"
-    restart: "always"
+    restart: always
     command:
-      - "./frpc"
+      - "./frps"
       - "-c"
-      - "client.toml"
+      - "server.toml"

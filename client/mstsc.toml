@@ -1,0 +1,22 @@
+serverAddr = "127.0.0.1"
+serverPort = 7000
+
+log.to = "./log/frpc.log"
+log.level = "info"
+log.maxDays = 3
+
+auth.token = "abc"
+
+[[proxies]]
+name = "mstsc_tcp"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 3389
+remotePort = 3389
+
+[[proxies]]
+name = "mstsc_udp"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 3389
+remotePort = 3389

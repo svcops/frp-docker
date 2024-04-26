@@ -1,5 +1,10 @@
 bindPort = 7000
 
+log.to = "./log/frps.log"
+log.level = "info"
+log.maxDays = 3
+
+auth.method = "token"
 auth.token = "abc"
 
 # 默认为 127.0.0.1，如果需要公网访问，需要修改为 0.0.0.0。

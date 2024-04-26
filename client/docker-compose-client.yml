@@ -1,17 +1,18 @@
 version: "3"
 
 services:
-  frp-server:
+  frp-client:
     image: "registry.cn-shanghai.aliyuncs.com/iproute/frp:0.57.0"
-    container_name: "frp-server"
+    container_name: "frp-client"
     network_mode: host
     environment:
       - TZ=Asia/Shanghai
     volumes:
-      - "./server.toml:/opt/frp/server.toml"
+      - "./client.toml:/opt/frp/client.toml"
+      - "./log:/opt/frp/log"
     working_dir: "/opt/frp"
-    restart: always
+    restart: "always"
     command:
-      - "./frps"
+      - "./frpc"
       - "-c"
-      - "server.toml"
+      - "client.toml"
