@@ -10,6 +10,7 @@ services:
     volumes:
       - "./client.toml:/opt/frp/client.toml"
     working_dir: "/opt/frp"
+    restart: "always"
     command:
       - "./frpc"
       - "-c"
