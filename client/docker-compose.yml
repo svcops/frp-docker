@@ -2,7 +2,7 @@ version: "3"
 
 services:
   frp-client:
-    image: "registry.cn-shanghai.aliyuncs.com/iproute/frp:0.59.0"
+    image: "registry.cn-shanghai.aliyuncs.com/iproute/frp:0.60.0"
     container_name: "frp-client"
     network_mode: host
     environment:

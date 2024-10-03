@@ -7,6 +7,6 @@ image_name="registry.cn-shanghai.aliyuncs.com/iproute/frp"
 
 bash <(curl https://code.kubectl.net/devops/build-project/raw/branch/main/docker/build.sh) \
   -i "$image_name" \
-  -v "0.59.0" \
+  -v "0.60.0" \
   -r "false" \
   -p "true"
