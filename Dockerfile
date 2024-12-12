@@ -12,9 +12,9 @@ RUN apt-get update \
      && apt-get install -y iputils-ping \
      && apt-get install -y ca-certificates vim curl && update-ca-certificates
 
-ADD build_files/frp_0.60.0_linux_amd64.tar.gz /opt/
+ADD build_files/frp_0.61.0_linux_amd64.tar.gz /opt/
 
-RUN mv /opt/frp_0.60.0_linux_amd64 /opt/frp
+RUN mv /opt/frp_0.61.0_linux_amd64 /opt/frp
 
 EXPOSE 7000
 
