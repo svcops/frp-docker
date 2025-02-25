@@ -1,4 +1,4 @@
-FROM ubuntu:22.04
+FROM registry.cn-shanghai.aliyuncs.com/iproute/ubuntu:22.04
 
 MAINTAINER "devops@kubectl.net"
 
