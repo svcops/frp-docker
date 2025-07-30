@@ -1,5 +1,3 @@
-version: "3"
-
 services:
   frp-server:
     image: "registry.cn-shanghai.aliyuncs.com/iproute/frp"
