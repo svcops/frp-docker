@@ -8,7 +8,7 @@ if is_windows; then
   export MSYS_NO_PATHCONV=1
 fi
 
-FRP_VERSION="0.62.1"
+FRP_VERSION="0.63.0"
 bash <(curl -sSL https://dev.kubectl.net/docker/build.sh) \
   -i "registry.cn-shanghai.aliyuncs.com/iproute/frp" \
   -a "FRP_VERSION=$FRP_VERSION" \
