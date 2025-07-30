@@ -1,6 +1,6 @@
 services:
   frp-client:
-    image: "registry.cn-shanghai.aliyuncs.com/iproute/frp:0.63.0"
+    image: "registry.cn-shanghai.aliyuncs.com/iproute/frp"
     container_name: "frp-client"
     network_mode: host
     environment:
