@@ -15,4 +15,3 @@ localPort = 22
 remotePort = 6000
 transport.useEncryption = true
 transport.useCompression = true
-
